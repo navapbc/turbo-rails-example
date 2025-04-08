@@ -1,10 +1,12 @@
 @use "index" as *;
 
 @use "components/btn";
+
 @use "components/error_message";
 @use "components/form";
 @use "components/visually_hidden";
 @use "components/quote";
 
 @use "layouts/container";
-@use "layouts/header"; 
+@use "layouts/header";
+@use "components/turbo_progress_bar";

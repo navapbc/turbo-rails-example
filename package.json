@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",
-    "build:css": "postcss ./app/assets/stylesheets/application.postcss.css -o ./app/assets/builds/application.css"
+    "build:css": "postcss app/assets/stylesheets/application.postcss.scss -o ./app/assets/builds/application.css"
   },
   "dependencies": {
     "@csstools/postcss-sass": "^5.1.1",
