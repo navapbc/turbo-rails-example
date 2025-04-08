@@ -1,13 +1,10 @@
-@import "mixins/_media.scss";
+@use "index" as *;
 
-@import "config/_variables.scss";
-@import "config/_reset.scss";
+@use "components/btn";
+@use "components/error_message";
+@use "components/form";
+@use "components/visually_hidden";
+@use "components/quote";
 
-@import "components/_btn.scss";
-@import "components/_error_message.scss";
-@import "components/_form.scss";
-@import "components/_visually_hidden.scss";
-@import "components/_quote.scss";
-
-@import "layouts/_container.scss";
-@import "layouts/_header.scss";
+@use "layouts/container";
+@use "layouts/header"; 
