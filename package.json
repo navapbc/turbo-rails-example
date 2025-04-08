@@ -3,7 +3,7 @@
   "private": true,
   "devDependencies": {
     "esbuild": "^0.25.2",
-    "postcss": "^8.4.35",
+    "postcss": "^8.5.3",
     "postcss-cli": "^11.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.1.0",
@@ -13,5 +13,8 @@
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",
     "build:css": "postcss ./app/assets/stylesheets/application.postcss.css -o ./app/assets/builds/application.css"
+  },
+  "dependencies": {
+    "@csstools/postcss-sass": "^5.1.1"
   }
 }
